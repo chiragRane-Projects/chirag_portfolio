@@ -43,7 +43,7 @@ const Hero = () => {
                 </aside>
 
                 <aside className='flex justify-center items-center bg-transparent'> 
-                    <Image src={profilePic} alt="profile pic" className='w-72 h-72 object-cover'/>
+                    <Image src={profilePic} alt="profile pic" className='w-72 h-72 object-cover' priority/>
                 </aside>
             </section>
         </main>
