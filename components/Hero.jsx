@@ -11,8 +11,8 @@ const Hero = () => {
         <main className='p-5 overflow-x-hidden'>
             <section className='md:grid md:grid-cols-2 md:gap-8 flex flex-col justify-center items-center'>
                 <aside className='md:px-6 flex flex-col gap-6'>
-                    <Badge className="bg-sky-500 rounded-full px-3 py-2 md:px-6 md:py-3 text-center mx-auto md:mx-0">
-                        <p className="text-sm sm:text-base md:text-lg font-semibold">
+                    <Badge className="bg-sky-500 rounded-full px-2 py-2 md:px-6 md:py-3 text-center md:mx-0">
+                        <p className="text-sm sm:text-base md:text-md font-semibold">
                             Full Stack Developer | AI-ML Engineer | Data Scientist
                         </p>
                     </Badge>

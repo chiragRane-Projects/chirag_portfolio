@@ -64,7 +64,7 @@ const Projects = () => {
                                     className="flex-1 bg-blue-600 hover:bg-blue-700 text-white transition-colors"
                                 >
                                     <a href={data.LiveURL} target="_blank" rel="noopener noreferrer">
-                                        Live Demo
+                                        Live View
                                     </a>
                                 </Button>
                             </div>
