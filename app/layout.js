@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Contact | Chirag",
+  title: "Chirag Rane - Full Stack Developer | AI-ML Engineer | Data Scientist",
   description:
     "Get in touch with Chirag — full-stack developer skilled in MERN, FastAPI, and more. Fill out the form to connect about projects, freelancing, or collaborations.",
   openGraph: {
