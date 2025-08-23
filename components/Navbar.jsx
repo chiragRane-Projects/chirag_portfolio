@@ -25,7 +25,7 @@ const Navbar = () => {
                 <li
                   className="relative transition-all duration-300
                   after:content-[''] after:absolute after:left-0 after:bottom-0
-                  after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300
+                  after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300
                   hover:after:w-full cursor-pointer"
                 >
                   {label}
