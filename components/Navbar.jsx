@@ -32,7 +32,7 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
-            <Link href="https://calendly.com/beingchirag6/30min">
+            <Link href="/Chirag_Rane_Resume.pdf">
               <Button className="bg-transparent border-2 text-black border-zinc-800 hover:bg-transparent cursor-pointer rounded-sm">
                 <p className="text-md">Download Resume</p>
               </Button>
@@ -41,9 +41,11 @@ const Navbar = () => {
         </nav>
 
         <main className='md:hidden'>
-          <Button className="border-2 border-zinc-800 bg-transparent rounded-sm">
-            <p className="text-md text-black ">Download Resume</p>
-          </Button>
+        <Link href="/Chirag_Rane_Resume.pdf">
+              <Button className="bg-transparent border-2 text-black border-zinc-800 hover:bg-transparent cursor-pointer rounded-sm">
+                <p className="text-md">Download Resume</p>
+              </Button>
+            </Link>
         </main>
     </header>
   )
