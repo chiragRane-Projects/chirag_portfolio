@@ -10,7 +10,7 @@ const AboutMe = () => {
 
                 <p className="text-base md:text-lg leading-relaxed text-gray-700">
                     Hi, I’m <span className="font-semibold">Chirag</span> — a full-stack developer with a love for
-                    crafting clean, engaging, and user-friendly web experiences.
+                    crafting clean, engaging, and user-friendly web and mobile experiences.
                 </p>
 
                 <p className="text-base md:text-lg leading-relaxed text-gray-700">
