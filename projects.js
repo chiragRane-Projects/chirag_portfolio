@@ -33,5 +33,12 @@ export const ProjectsData = [
         Techstack: "FastAPI, Scikit-Learn, Pandas",
         GithubURL: "https://github.com/chiragRane-Projects/logitrack-backend.git",
         LiveURL: "https://github.com/chiragRane-Projects/logitrack-backend.git"
+    },
+    {
+        "Name": "Lords Restaurant Admin Panel",
+        "Description": "A full-stack admin dashboard for managing restaurant dishes, tables, customers, loyalty points, reports. Also the customer side mobile app is in development.",
+        "Techstack": "Vite, NodeJS, ExpressJS, MongoDB Atlas, ShadcnUI, Tailwind CSS, Zustand",
+        "GithubURL": "https://github.com/chiragRane-Projects/restaurant_admin_frontend.git",
+        "LiveURL": "https://lords-restaurant.vercel.app/"
     }
 ]
