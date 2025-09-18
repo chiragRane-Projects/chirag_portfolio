@@ -36,9 +36,16 @@ export const ProjectsData = [
     },
     {
         "Name": "Lords Restaurant Admin Panel",
-        "Description": "A full-stack admin dashboard for managing restaurant dishes, tables, customers, loyalty points, reports. Also the customer side mobile app is in development. Lords is just a fictional name given to the project. The backend repository link is being attached in the README.md file of frontend repository. Its running on localhost yet to be deployed.",
+        "Description": "A full-stack admin dashboard for managing restaurant dishes, tables, customers and reports. Lords is just a fictional name given to the project. The backend repository link is being attached in the README.md file of frontend repository.",
         "Techstack": "Vite, NodeJS, ExpressJS, MongoDB Atlas, ShadcnUI, Tailwind CSS, Zustand",
         "GithubURL": "https://github.com/chiragRane-Projects/restaurant_admin_frontend.git",
-        "LiveURL": "https://lords-restaurant.vercel.app/"
+        "LiveURL": "https://restaurant-admin-frontend-xi.vercel.app/"
+    },
+    {
+        "Name":"Aarunya Studios Website",
+        "Description": "Landing page for Aarunya Studios. Aarunya Studios is a tech and marketing agency offering a variety of services. Since its a client project the github repository cannot be shared",
+        "Techstack":"NextJS 15 App Router, Tailwind CSS, ShadcnUI",
+        "GithubURL":"https://github.com/chiragRane-Projects",
+        "LiveURL":"https://aarunyastudios.co.in/"
     }
 ]
