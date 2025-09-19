@@ -32,7 +32,7 @@ export const ProjectsData = [
         Description: "Logitrack is an API based project. It is designed for logistics company to predict whether their deliverables will be on time or not based on certain conditions. Since the project has no ready frontend there is no live demo link. You can clone the repository and test the APIs.",
         Techstack: "FastAPI, Scikit-Learn, Pandas",
         GithubURL: "https://github.com/chiragRane-Projects/logitrack-backend.git",
-        LiveURL: "https://github.com/chiragRane-Projects/logitrack-backend.git"
+        LiveURL: null
     },
     {
         "Name": "Lords Restaurant Admin Panel",
@@ -52,7 +52,7 @@ export const ProjectsData = [
         "Name":"Aarunya Studios Website",
         "Description": "Landing page for Aarunya Studios. Aarunya Studios is a tech and marketing agency offering a variety of services. Since its a client project the github repository cannot be shared",
         "Techstack":"NextJS 15 App Router, Tailwind CSS, ShadcnUI",
-        "GithubURL":"https://github.com/chiragRane-Projects",
+        "GithubURL":null,
         "LiveURL":"https://aarunyastudios.co.in/"
     }
 ]
