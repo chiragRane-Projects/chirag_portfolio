@@ -42,6 +42,13 @@ export const ProjectsData = [
         "LiveURL": "https://restaurant-admin-frontend-xi.vercel.app/"
     },
     {
+        "Name": "Restaurant Mobile App",
+        "Description":"Customer side facing mobile application where customers can order their favourite dish. To try out the application kindly clone the repository.",
+        "Techstack": "React Native, Expo",
+        "GithubURL": "https://github.com/chiragRane-Projects/restaurant_mobile_app.git",
+        "LiveURL": null
+    },
+    {
         "Name":"Aarunya Studios Website",
         "Description": "Landing page for Aarunya Studios. Aarunya Studios is a tech and marketing agency offering a variety of services. Since its a client project the github repository cannot be shared",
         "Techstack":"NextJS 15 App Router, Tailwind CSS, ShadcnUI",
