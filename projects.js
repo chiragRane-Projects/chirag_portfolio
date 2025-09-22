@@ -1,10 +1,10 @@
 export const ProjectsData = [
     {
-        "Name": "Aarunya Studios Website",
-        "Description": "The official landing page for Aarunya Studios, my own tech and marketing agency. I co-founded the agency and led the design and development of this site, showcasing our services and brand identity. Built as a client-ready, production-grade website, it emphasizes clean design, smooth interactions, and responsive performance.",
-        "Techstack": "NextJS 15 App Router, Tailwind CSS, ShadcnUI",
-        "GithubURL": null,
-        "LiveURL": "https://aarunyastudios.co.in/"
+        Name: "Aarunya Studios Website",
+        Description: "The official landing page for Aarunya Studios, my own tech and marketing agency. I co-founded the agency and led the design and development of this site, showcasing our services and brand identity. Built as a client-ready, production-grade website, it emphasizes clean design, smooth interactions, and responsive performance.",
+        Techstack: "NextJS 15 App Router, Tailwind CSS, ShadcnUI, AWS EC2",
+        GithubURL: null,
+        LiveURL: "https://aarunyastudios.co.in/"
     },
     {
         Name: "FoodTrient",
@@ -12,6 +12,13 @@ export const ProjectsData = [
         Techstack: "NextJS, TailwindCSS, ShadcnUI, GeminiAI",
         GithubURL: "https://github.com/chiragRane-Projects/FoodTrient.git",
         LiveURL: "https://foodtrient.vercel.app/"
+    },
+    {
+        Name: "Consultation Agency Landing Page",
+        Description: "Landing page for a brand consultation agency.",
+        Techstack: "NextJS 15 App Router, Tailwind CSS, Shadcn UI",
+        GithubURL: "https://github.com/chiragRane-Projects/Consulting.git",
+        LiveURL: "https://consulting-au.netlify.app/"
     },
     {
         Name: "Traventure",
@@ -42,24 +49,24 @@ export const ProjectsData = [
         LiveURL: null
     },
     {
-        "Name": "Lords Restaurant Admin Panel",
-        "Description": "A full-stack admin dashboard for managing restaurant dishes, tables, customers and reports. Lords is just a fictional name given to the project. The backend repository link is being attached in the README.md file of frontend repository.",
-        "Techstack": "Vite, NodeJS, ExpressJS, MongoDB Atlas, ShadcnUI, Tailwind CSS, Zustand",
-        "GithubURL": "https://github.com/chiragRane-Projects/restaurant_admin_frontend.git",
-        "LiveURL": "https://restaurant-admin-frontend-xi.vercel.app/"
+        Name: "Lords Restaurant Admin Panel",
+        Description: "A full-stack admin dashboard for managing restaurant dishes, tables, customers and reports. Lords is just a fictional name given to the project. The backend repository link is being attached in the README.md file of frontend repository.",
+        Techstack: "Vite, NodeJS, ExpressJS, MongoDB Atlas, ShadcnUI, Tailwind CSS, Zustand",
+        GithubURL: "https://github.com/chiragRane-Projects/restaurant_admin_frontend.git",
+        LiveURL: "https://restaurant-admin-frontend-xi.vercel.app/"
     },
     {
-        "Name": "Restaurant Mobile App",
-        "Description": "Customer side facing mobile application where customers can order their favourite dish. To try out the application kindly clone the repository.",
-        "Techstack": "React Native, Expo",
-        "GithubURL": "https://github.com/chiragRane-Projects/restaurant_mobile_app.git",
-        "LiveURL": null
+        Name: "Restaurant Mobile App",
+        Description: "Customer side facing mobile application where customers can order their favourite dish. To try out the application kindly clone the repository.",
+        Techstack: "React Native, Expo",
+        GithubURL: "https://github.com/chiragRane-Projects/restaurant_mobile_app.git",
+        LiveURL: null
     },
     {
-        "Name": "Appniche Technologies Website",
-        "Description": "Appniche Technologies is a tech startup which offers variety of IOT & software products which helps the business owners operate their functions easily. Its a client work and hence the github repository cannot be shared.",
-        "Techstack": "NextJS 15 App Router, Tailwind CSS, ShadcnUI, Framer-Motion",
-        "GithubURL": null,
-        "LiveURL": "https://appniche-technologies.vercel.app/"
+        Name: "Appniche Technologies Website",
+        Description: "Appniche Technologies is a tech startup which offers variety of IOT & software products which helps the business owners operate their functions easily. Its a client work and hence the github repository cannot be shared.",
+        Techstack: "NextJS 15 App Router, Tailwind CSS, ShadcnUI, Framer-Motion",
+        GithubURL: null,
+        LiveURL: "https://appniche-technologies.vercel.app/"
     }
 ]
