@@ -68,5 +68,12 @@ export const ProjectsData = [
         Techstack: "NextJS 15 App Router, Tailwind CSS, ShadcnUI, Framer-Motion",
         GithubURL: null,
         LiveURL: "https://appniche-technologies.vercel.app/"
-    }
+    },
+    {
+        Name: "Project Salon",
+        Description: "An ecosystem for salons. The project consists of a landing page, admin panel also mobile application for customers. Currently the project is in development and soon entire project will be live.",
+        Techstack: "NextJS 15 App Router, Tailwind CSS, Mongodb Atlas, ShadcnUI",
+        GithubURL: "https://github.com/chiragRane-Projects/salon_admin_panel.git",
+        LiveURL: "https://project-salon-au.vercel.app/"
+    },
 ]
