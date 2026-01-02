@@ -24,7 +24,7 @@ export default function About() {
     const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
 
     return (
-        <section ref={containerRef} className="py-32 px-6 bg-stone-950 relative overflow-hidden">
+        <section id="about" ref={containerRef} className="py-32 px-6 bg-stone-950 relative overflow-hidden">
             {/* Subtle background texture */}
             <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-5 mix-blend-overlay pointer-events-none"></div>
 

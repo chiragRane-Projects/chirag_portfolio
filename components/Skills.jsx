@@ -1,16 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-
-const skills = [
-  { name: "NextJS", category: "Frontend", level: 95 },
-  { name: "Python", category: "Backend/DS", level: 90 },
-  { name: "FastAPI", category: "Backend", level: 85 },
-  { name: "React", category: "Frontend", level: 95 },
-  { name: "PostgreSQL", category: "Database", level: 80 },
-  { name: "MongoDB", category: "Database", level: 85 },
-  { name: "Django", category: "Backend", level: 75 },
-  { name: "Data Science", category: "Analysis", level: 88 },
-];
+import { skills } from "@/lib/data";
 
 export default function Skills() {
   return (
