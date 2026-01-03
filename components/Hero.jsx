@@ -1,8 +1,9 @@
 'use client'
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Volume2, VolumeX } from "lucide-react"; // Import Volume icons
+import { ArrowRight, Volume2, VolumeX } from "lucide-react"; 
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 export default function Hero() {
   // --- Mouse Effect Logic ---
@@ -16,22 +17,24 @@ export default function Hero() {
   }
 
   // --- Audio Logic ---
+  // Start with true to avoid icon flickering, we update it immediately in useEffect
   const [isMuted, setIsMuted] = useState(true);
   const audioRef = useRef(null);
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.3; // Set volume low (30%) so it's not annoying
+      audioRef.current.volume = 0.3; // Set volume to 30%
       
-      // Try to play immediately
+      // ATTEMPT AUTOPLAY
       const playPromise = audioRef.current.play();
       
       if (playPromise !== undefined) {
         playPromise.then(() => {
-          // Auto-play started
+          // Success: Browser allowed autoplay
           setIsMuted(false);
         }).catch((error) => {
-          // Auto-play was prevented by browser
+          // Fail: Browser blocked autoplay (User must click manually)
+          console.log("Autoplay prevented by browser policy");
           setIsMuted(true);
         });
       }
@@ -55,7 +58,7 @@ export default function Hero() {
       className="relative h-screen w-full flex flex-col justify-center items-center bg-black overflow-hidden group"
       onMouseMove={handleMouseMove}
     >
-      {/* THE AUDIO ELEMENT (Hidden) */}
+      {/* THE AUDIO ELEMENT */}
       <audio ref={audioRef} loop src="/theme.mp3" />
 
       {/* 1. Background Grid */}
@@ -94,7 +97,7 @@ export default function Hero() {
           className="font-serif font-black text-6xl md:text-8xl lg:text-[9rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-stone-200 to-stone-600 select-none"
         >
           CHIRAG <br />
-          <span className="text-stone-800 text-stroke-gold">RANE</span>
+          <span className="text-stone-400">RANE</span>
         </motion.h1>
 
         <motion.div 
@@ -116,6 +119,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.5 }}
           className="mt-12"
         >
+          <Link href={"#about"}>
           <Button 
             variant="outline" 
             size="lg"
@@ -130,38 +134,35 @@ export default function Hero() {
             View Dossier
             <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
           </Button>
+          </Link>
         </motion.div>
       </div>
 
       {/* 4. Bottom Fade */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
 
-      {/* --- SOUND CONTROLLER --- */}
+      {/* --- SOUND CONTROLLER (Top Right, Slate-200) --- */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-10 right-10 z-50 hidden md:block"
+        className="absolute top-6 right-6 md:top-10 md:right-10 z-50"
       >
         <button 
           onClick={toggleAudio}
-          className="flex items-center gap-3 text-stone-500 hover:text-gold-500 transition-colors group"
+          className="flex items-center gap-3 text-slate-200 hover:text-gold-500 transition-colors group"
         >
-          <span className="text-[10px] uppercase tracking-widest font-mono opacity-0 group-hover:opacity-100 transition-opacity">
-            {isMuted ? "Play Soundtrack" : "Mute"}
+          {/* Label */}
+          <span className="hidden md:block text-[10px] uppercase tracking-widest font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+            {isMuted ? "Play Soundtrack" : "Pause"}
           </span>
-          <div className="w-10 h-10 rounded-full border border-stone-800 group-hover:border-gold-500 flex items-center justify-center transition-colors">
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 animate-pulse" />}
+          
+          {/* Icon Circle */}
+          <div className="w-10 h-10 rounded-full border border-slate-200/30 group-hover:border-gold-500 flex items-center justify-center transition-all duration-300">
+            {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5 animate-pulse" />}
           </div>
         </button>
       </motion.div>
-
-      {/* Mobile Sound Control (Simpler position) */}
-      <div className="absolute top-6 right-6 z-50 md:hidden">
-         <button onClick={toggleAudio} className="text-gold-500">
-            {isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
-         </button>
-      </div>
 
     </section>
   );
