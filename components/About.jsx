@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Dancing_Script } from "next/font/google";
+import Link from "next/link";
 
 // Initialize font outside the component for better performance
 const pacifico = Dancing_Script({
@@ -79,7 +80,9 @@ export default function About() {
                             In an industry drowning in noise, I deal strictly in <strong>precision and leverage</strong>. As a Software Engineer and Data Scientist, I don't just build applications; I architect systems that secure competitive dominance.
                         </p>
                         <p>
-                            I am the founder of <span className="text-stone-200 font-semibold border-b border-gold-500/50 pb-1">Aarunya Studios</span>. We operate where high-end aesthetics meet the brute force of modern tech stacks like Next.js, Python, and AI-driven analytics.
+                            I am the founder of <Link href={"https://aarunyastudios.co.in/"}>
+                            <span className="text-stone-200 font-semibold border-b border-gold-500/50 pb-1">Aarunya Studios</span>
+                            </Link>. We operate where high-end aesthetics meet the brute force of modern tech stacks like Next.js, Python, and AI-driven analytics.
                         </p>
                         <p>
                             We don't chase trends. We set standards.
