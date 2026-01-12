@@ -91,7 +91,7 @@ function ProjectCard({ project }) {
           <div className="flex justify-between items-start mb-4">
             <div>
               <div className="flex items-center gap-3">
-                <Link href={project.link} target="_blank" className="group/link flex items-center gap-2">
+                <Link href={`/project/${project.id}`} className="group/link flex items-center gap-2">
                   <h4 className="text-2xl font-serif font-bold text-stone-200 group-hover/link:text-gold-500 transition-colors duration-300">
                     {project.title}
                   </h4>
@@ -99,7 +99,7 @@ function ProjectCard({ project }) {
                 </Link>
                 
                 {/* GitHub Icon */}
-                {project.github && (
+                {project.github && project.github !== "#" && (
                   <Link href={project.github} target="_blank" className="text-stone-600 hover:text-white transition-colors">
                      <Github className="w-5 h-5" />
                   </Link>

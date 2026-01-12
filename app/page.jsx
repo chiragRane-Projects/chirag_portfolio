@@ -6,6 +6,7 @@ import TheTriad from "@/components/methodology";
 import Methodology from "@/components/methodology";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,10 +14,13 @@ export default function Home() {
     <>
     <Hero/>
     <About/>
-    <Projects/>
+    <div id="projects">
+      <Projects/>
+    </div>
     <Skills/>
     <TheDuality/>
     <Footer/>
+    <ContactForm/>
     </>
   );
 }

@@ -26,14 +26,17 @@ export default function Skills() {
               </div>
               
               <div>
-                <h4 className="text-xl font-serif font-bold text-stone-300 group-hover:text-white">
-                  {skill.name}
-                </h4>
-                {/* Progress Bar */}
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-2xl">{skill.logo}</span>
+                  <h4 className="text-xl font-serif font-bold text-stone-300 group-hover:text-white">
+                    {skill.name}
+                  </h4>
+                </div>
+                {/* Decorative Line */}
                 <div className="w-full h-1 bg-stone-800 mt-3 overflow-hidden">
                   <motion.div 
                     initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
+                    whileInView={{ width: "100%" }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="h-full bg-gold-600"
                   />
