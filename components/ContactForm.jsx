@@ -134,7 +134,7 @@ export default function ContactForm() {
                     onChange={handleInputChange}
                     required
                     className="mt-2 bg-transparent border-stone-700 text-white focus:border-gold-500 rounded-none"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 85913 07204"
                   />
                 </div>
 
