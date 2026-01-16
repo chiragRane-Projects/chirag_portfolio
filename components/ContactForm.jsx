@@ -28,7 +28,7 @@ export default function ContactForm() {
     // Create WhatsApp message
     const message = `*New Business Inquiry*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Work Required:* ${formData.workType}%0A%0APlease contact me for further discussion.`;
     
-    const whatsappURL = `https://wa.me/+919876543210?text=${message}`;
+    const whatsappURL = `https://wa.me/+918591307204?text=${message}`;
     
     window.open(whatsappURL, '_blank');
     
