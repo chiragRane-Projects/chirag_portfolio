@@ -3,9 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Dancing_Script } from "next/font/google";
-import Link from "next/link";
 
-// Initialize font outside the component for better performance
 const pacifico = Dancing_Script({
     subsets: ["latin"],
     weight: ["400"],
@@ -15,30 +13,27 @@ const pacifico = Dancing_Script({
 export default function About() {
     const containerRef = useRef(null);
     
-    // Creates the slight parallax lag effect
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start end", "end start"]
     });
 
-    // Image moves slower than text
     const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
 
     return (
         <section id="about" ref={containerRef} className="py-32 px-6 bg-stone-950 relative overflow-hidden">
-            {/* Subtle background texture */}
             <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-5 mix-blend-overlay pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 
-                {/* Thematic Image Container (Parallax Effect) */}
+                {/* Thematic Image Container */}
                 <motion.div style={{ y }} className="relative h-[500px] md:h-[650px] w-full hidden lg:block group">
                     <div className="absolute inset-0 border-[1px] border-gold-600/40 translate-x-6 translate-y-6 z-0 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
 
                     <div className="relative h-full w-full bg-black overflow-hidden z-10">
                         <Image
                             src="https://images.unsplash.com/photo-1481026469463-66327c86e544?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3"
-                            alt="Structure and Order"
+                            alt="The Fixer"
                             fill
                             className="object-cover opacity-60 grayscale hover:grayscale-0 hover:opacity-80 transition-all duration-1000 scale-105 group-hover:scale-100"
                         />
@@ -54,7 +49,7 @@ export default function About() {
                         viewport={{ once: true }}
                         className="text-slate-100 font-mono uppercase tracking-[0.2em] text-sm mb-6"
                     >
-                        The Consigliere of Code
+                        Independent Architect
                     </motion.p>
 
                     <motion.h2
@@ -77,19 +72,16 @@ export default function About() {
                         className="space-y-6 text-lg text-stone-400 font-light leading-relaxed max-w-xl"
                     >
                         <p>
-                            In an industry drowning in noise, I deal strictly in <strong>precision and leverage</strong>. As a Software Engineer and Data Scientist, I don't just build applications; I architect systems that secure competitive dominance.
+                            In an industry of templates and shortcuts, I provide <strong>strategic leverage</strong>. I am a freelance Software Engineer and Data Scientist specializing in high-stakes projects that require more than just code—they require a solution that holds its ground.
                         </p>
                         <p>
-                            I am the founder of <Link href={"https://aarunyastudios.co.in/"}>
-                            <span className="text-stone-200 font-semibold border-b border-gold-500/50 pb-1">Aarunya Studios</span>
-                            </Link>. We operate where high-end aesthetics meet the brute force of modern tech stacks like Next.js, Python, and AI-driven analytics.
+                            I build custom systems using Next.js, Python, and advanced AI-driven analytics. My work isn't about filling seats; it's about solving problems that others find too complex or too risky to touch.
                         </p>
                         <p>
-                            We don't chase trends. We set standards.
+                            One project at a time. No excuses. No compromises.
                         </p>
                     </motion.div>
 
-                    {/* Signature / Decorative Element */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -97,7 +89,6 @@ export default function About() {
                         viewport={{ once: true }}
                         className="mt-16"
                     >
-                        {/* Applying the font class directly here */}
                         <div className={`${pacifico.className} text-4xl text-stone-500/80 -rotate-6 tracking-wide`}>
                             Chirag V. Rane
                         </div>

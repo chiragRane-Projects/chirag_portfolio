@@ -109,8 +109,6 @@ export default function Hero() {
           <span>Software Engineer</span>
           <span className="h-1 w-1 bg-gold-500 rounded-full"></span>
           <span>Data Scientist</span>
-          <span className="h-1 w-1 bg-gold-500 rounded-full"></span>
-          <span>Founder, Aarunya Studios</span>
         </motion.div>
 
         <motion.div 

@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="text-center md:text-left">
                     <h4 className="text-white font-serif text-xl">CHIRAG VAIBHAV RANE</h4>
-                    <p className="text-sm mt-2">Owner, Aarunya Studios</p>
+                    <p className="text-sm mt-2">Freelancer</p>
                 </div>
 
                 <div className="flex gap-8 text-sm tracking-widest uppercase">
