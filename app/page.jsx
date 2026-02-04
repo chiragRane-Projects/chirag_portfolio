@@ -6,12 +6,14 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import ContactForm from "@/components/ContactForm";
 import Services from "@/components/Services";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
+      <Education/>
       <div id="projects">
         <Projects />
       </div>
