@@ -6,8 +6,8 @@ const education = [
     level: "Degree / Specialization",
     institution: "Tilak Maharashtra Vidyapeeth",
     major: "Bachelor of Computer Applications (BCA)",
-    period: "2023 — 2026 (In Progress)",
-    result: "Current CGPA: 7.90",
+    period: "2023 — 2026",
+    result: "8.0 CGPA",
     details: "Core focus on Computer Science, System Architecture, and Software Engineering.",
     status: "Active"
   },
@@ -49,7 +49,7 @@ export default function Education() {
           <div className="absolute left-0 top-0 w-px h-full bg-stone-900 ml-[11px] md:ml-[15px]"></div>
 
           {education.map((edu, i) => (
-            <motion.div 
+            <motion.div
               key={edu.level}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -76,7 +76,7 @@ export default function Education() {
                   <span className="text-stone-700">|</span>
                   <span className="text-stone-200 text-sm font-mono">{edu.result}</span>
                 </div>
-                
+
                 <p className="text-stone-500 text-sm font-light leading-relaxed max-w-2xl">
                   {edu.details}
                 </p>
